@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Enter our Cat Discount Program!</h1>
+          <p id="description" class="description text-center">
+            Receive promo codes to save money on your puwrrchases
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Do you buy products for your cat frequently?</p>
+            <label>
+              <input
+                name="buy-frequency"
+                value="Yes"
+                type="radio"
+                class="input-radio"
+                checked
+              />Yes</label
+            >
+            <label>
+              <input
+                name="buy-frequency"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+      
+            <label
+              ><input
+                name="buy-frequency"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+            <label>
+              <input
+                name="buy-frequency"
+                value="i-dont-know"
+                type="radio"
+                class="input-radio"
+                checked
+              />I don't know</label
+            >
+            <label>
+              <input
+                name="buy-frequency"
+                value="can-you-repeat-the-question"
+                type="radio"
+                class="input-radio"
+              />Can you repeat the question?</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What kind of products do you buy for your cat?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="products"
+                value="beds"
+                type="checkbox"
+                class="input-checkbox"
+              />Beds</label
+            >
+            <label>
+              <input
+                name="products"
+                value="scrapers"
+                type="checkbox"
+                class="input-checkbox"
+              />Scrapers</label
+            >
+            <label
+              ><input
+                name="products"
+                value="toys"
+                type="checkbox"
+                class="input-checkbox"
+              />Toys</label
+            >
+            <label
+              ><input
+                name="products"
+                value="catnip"
+                type="checkbox"
+                class="input-checkbox"
+              />Catnip</label
+            >
+            <label
+              ><input
+                name="products"
+                value="cat-litter"
+                type="checkbox"
+                class="input-checkbox"
+              />Cat litter</label
+            >
+            <label
+              ><input
+                name="products"
+                value="cleaning-products"
+                type="checkbox"
+                class="input-checkbox"
+              />Cleaning products</label
+            >
+            <label
+              ><input
+                name="products"
+                value="dry-food"
+                type="checkbox"
+                class="input-checkbox"
+              />Dry food</label
+            >
+            <label
+              ><input
+                name="products"
+                value="wet-food"
+                type="checkbox"
+                class="input-checkbox"
+              />Wet food</label
+            >
+            <label
+              ><input
+                name="products"
+                value="bath-products"
+                type="checkbox"
+                class="input-checkbox"
+              />Bath products</label
+            >
+            <label
+              ><input
+                name="products"
+                value="food-water-containers"
+                type="checkbox"
+                class="input-checkbox"
+              />Food/Water containers</label
+            >
+            <label
+              ><input
+                name="products"
+                value="sweaters-costumes"
+                type="checkbox"
+                class="input-checkbox"
+              />Sweaters/Costumes</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Is there anything else you want to share about your cat? :) </p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
